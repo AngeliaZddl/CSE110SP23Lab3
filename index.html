@@ -3,7 +3,6 @@
   <head>
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="https://raw.github.com/AngeliaZddl/CSE110SP23Lab2/main/image/team-meeting.jpg">
-    <link rel="stylesheet" type="css" href="/style.css">
   </head>
   <body>
     <header href="#top">
@@ -40,26 +39,34 @@
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"><br>
+
             <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone"><br>
+
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob"><br>
+
             <label for="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
+            <select id="gender" name="gender">
+              <option value="Prefer Not To Say">Prefer Not To Say</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select><br>
+
             <label for="hobbies">Hobbies:</label>
             <textarea id="hobbies" name="hobbies"></textarea><br>
+
             <label for="color">Favorite Color:</label>
-            <input list="colors" id="color" name="color">
-            <datalist id="colors">
-              <option value="Red">
-              <option value="Green">
-              <option value="Blue">
-            </datalist><br>
+            <select id="color" name="color">
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="Other">Other</option>
+            </select><br>
+
             <label for="country">Country:</label>
             <select id="country" name="country">
               <option value="USA">USA</option>
@@ -68,7 +75,7 @@
               <option value="China">China</option>
             </select><br>
           </fieldset>
-          <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>        
       </section>
       <section id="agenda">
@@ -117,9 +124,9 @@
         </video>
       </section>
       <button><a href="#top">Top</a></button>
+      <footer>
+        <p>Meeting minutes recorded by Angelia on April 16, 2023</p>
+      </footer>
     </main>
-    <footer>
-      <p>Meeting minutes recorded by Angelia on April 16, 2023</p>
-    </footer>
   </body>
 </html>

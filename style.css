@@ -10,7 +10,7 @@ html {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 /* Global styles */
@@ -31,18 +31,25 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-weight: bold;
   margin: 1em 0;
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
 p {
-  margin-left: 30px;
+  margin-left: 60px;
   margin-top: 10px;
 }
 
 /* Header styles */
 header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #333;
   color: #fff;
   padding: 1em;
@@ -61,25 +68,66 @@ h1 {
 /* Main styles */
 main {
   display: flex;
-  justify-content: center;
-  margin-top: 2em;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 4cm;
+  margin-left: 300px;
+  margin-bottom: 3cm;
 }
 
 section {
   display: flex;
+  flex-direction: column;
   width: 80%;
+  margin-bottom: 2em;
 }
 
-ul {
-  margin-left: 60px;
+section > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+section > div > h2 {
+  font-size: 2em;
+}
+
+section > div > p {
+  font-size: 1.2em;
+  color: #555;
+  margin-left: 1em;
+}
+
+section > div > a {
+  color: #cc9900;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+section > div > a:hover {
+  text-decoration: underline;
+}
+
+section > div > img {
+  max-width: 60%;
+}
+
+details, ol, ul {
+  margin-left: 80px;
   margin-top: 10px;
 }
 
 nav {
-  width: 20%;
+  top: 4cm;
+  float: left;
+  position: fixed;
+  width: 10%;
   background-color: #007ecc;
   color: #fff;
   padding: 1em;
+  overflow: auto;
 }
 
 nav ul {
@@ -100,7 +148,6 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 40%;
-  height: auto;
 }
 
 audio {
@@ -112,5 +159,56 @@ video {
   display: block;
   margin: 0 auto;
   max-width: 50%;
-  height: auto;
+}
+
+form {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #d1f1c3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 0px 0px 5px rgba(46, 41, 41, 0.2);
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  background-color: lightblue;
+}
+
+select[id=gender],
+select[id=color],
+select[id=country] {
+  display: list-item;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: none;
+  box-shadow: inset 0px 0px 20px rgba(46, 41, 41, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
 }
