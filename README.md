@@ -1,3 +1,3 @@
 # CSE110 SP23 Lab3
 
-[My Hosted Page(From Lab2)](https://angeliazddl.github.io/CSE110SP23Lab3/)
+[My Hosted Page(From Lab2)](https://angeliazddl.github.io/CSE110SP23Lab2/)
