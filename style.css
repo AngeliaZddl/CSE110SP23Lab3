@@ -1,93 +1,149 @@
-/* Global styles */
+/* Set default font size and color */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  a {
+    font-size: 16px;
     color: #333;
   }
   
-  nav {
-    background-color: #eee;
-    padding: 10px;
+  /* Style the header */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
   }
   
-  ul {
-    list-style: none;
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
   }
   
-  li {
-    display: inline-block;
-    margin-right: 10px;
+  nav li {
+    margin-right: 20px;
   }
   
-  /* Section styles */
-  section {
-    margin-top: 50px;
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  /* Style the main content */
+  main {
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+  }
+  
+  section {
+    margin-bottom: 30px;
   }
   
   section h2 {
-    margin-top: 0;
+    margin: 0;
+    font-size: 28px;
   }
   
-  section ul, section ol {
-    margin-left: 30px;
+  section p {
+    font-size: 18px;
   }
   
+  section ol, section ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+  }
+  
+  section li {
+    font-size: 18px;
+  }
+  
+  /* Style the form */
   form {
     margin-top: 30px;
-    max-width: 500px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
   }
   
-  form label {
-    display: inline-block;
-    width: 120px;
-    text-align: right;
-    margin-right: 10px;
+  label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
   }
   
-  form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
-    width: 200px;
-    padding: 5px;
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
   }
   
-  form select, form datalist {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+  textarea {
+    height: 100px;
   }
   
-  form button[type="submit"] {
-    padding: 5px 10px;
+  button[type="submit"] {
     background-color: #333;
     color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
   }
   
-  form button[type="submit"]:hover {
-    background-color: #444;
+  button[type="submit"]:hover {
+    background-color: #000;
+  }
+  
+  /* Style the details summary */
+  details summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Style the figure and figcaption */
+  figure {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  figcaption {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  /* Style the audio and video elements */
+  audio, video {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 100%;
   }
   
