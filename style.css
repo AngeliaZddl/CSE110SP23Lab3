@@ -1,97 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #4d386e;
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #6d1111;
-    background-color: #f4f4f4;
-}
-
-a {
-    color: #cc9900;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    margin: 1em 0;
-}
-
-p {
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
     text-align: center;
-}
-
-h1 {
-    margin-bottom: 1em;
-}
-
-.date {
-    color: #0077cc;
-    font-size: 2em;
-}
-
-/* Main styles */
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-}
-
-section {
-    display: flex;
-    width: 80%;
-}
-
-ul {
-    margin-left: 60px;
-    margin-top: 10px;
-}
-
-nav {
-    width: 20%;
-    background-color: #007ecc;
-    color: #fff;
-    padding: 1em;
-}
-
-nav ul {
+  }
+  
+  a {
+    color: #333;
+  }
+  
+  nav {
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    margin-bottom: 1.5em;
-}
-
-nav a {
-    display: block;
-}
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Section styles */
+  section {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  section ul, section ol {
+    margin-left: 30px;
+  }
+  
+  form {
+    margin-top: 30px;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  form label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  form select, form datalist {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #444;
+  }
+  
