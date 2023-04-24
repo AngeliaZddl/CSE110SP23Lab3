@@ -94,21 +94,23 @@ nav li {
 
 nav a {
   display: block;
-}  
+}
 
 img {
   display: block;
   margin: 0 auto;
   max-width: 40%;
-  }
-  
+  height: auto;
+}
+
 audio {
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 video {
-display: block;
-margin: 0 auto;
-max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
 }
